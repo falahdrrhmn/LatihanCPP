@@ -10,3 +10,6 @@ int main() {
   return 0;
 }
 ```
+cara manggil hello world di c++ kayak gitu
+Penjelasannnya
+
