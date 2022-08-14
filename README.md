@@ -13,6 +13,7 @@ int main() {
 cara manggil hello world di c++ kayak gitu
 
 Penjelasannnya
-1. baris pertama '''#include <iostream>''' itu header file library yang memungkinkan kita menggunakna input dan output objek, seoerti halnya cout, klo gada itu ya error. File header menambahkan fungsionalitas ke program C++.
-2.  selanjutnya ada juga '''using namespace std''' berarti kita dapat menggunakan nama untuk objek dan variabel dari pustaka standar.
+1. Baris pertama <code>#include <iostream></code> itu header file library yang memungkinkan kita menggunakna input dan output objek, seoerti halnya cout, klo gada itu ya error. File header menambahkan fungsionalitas ke program C++.
+2. Selanjutnya ada juga '''using namespace std''' berarti kita dapat menggunakan nama untuk objek dan variabel dari pustaka standar.
+3. Setelah itu juga ada   
 
