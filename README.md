@@ -1,3 +1,3 @@
 # NYOBA LATIHAN C++
 
-Basic syntax mangil Hello world!
+## Basic syntax mangil Hello world!
