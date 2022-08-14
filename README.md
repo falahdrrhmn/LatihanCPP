@@ -1,3 +1,3 @@
 # NYOBA LATIHAN C++
 
-<h1>Pertama Commit</h1>
+Basic syntax mangil Hello world!
