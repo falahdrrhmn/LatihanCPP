@@ -15,7 +15,7 @@ cara manggil hello world di c++ kayak gitu
 Penjelasannnya
 1. Baris pertama <code>#include <iostream></code> itu header file library yang memungkinkan kita menggunakna input dan output objek, seoerti halnya cout, klo gada itu ya error. File header menambahkan fungsionalitas ke program C++.
 2. Selanjutnya ada juga <code>using namespace std</code> berarti kita dapat menggunakan nama untuk objek dan variabel dari pustaka standar.
-3. Setelah itu juga ada <code>int main()</code> ini merupakan sebuah function, dan kode yang ada didalam {} baka dieksekusi
+3. Setelah itu juga ada <code>int main()</code> ini merupakan sebuah function, dan kode yang ada ```didalam``` {} baka dieksekusi
 4. Selanjutnya ada <code>cout</code> cara bacanya "see out" kalo singkatannya console out. Ini merupakan sebuah objek yang juga digunakan bebarengan dengan<code> << </code>
 
 ***Note:***
@@ -32,7 +32,7 @@ Beberapa program C++ yang berjalan tanpa pustaka namespace standar. Baris using 
 
 kayak gini contohnya 
 
-'''C++
+```C++
 #include <iostream>
 
 int main() {
