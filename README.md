@@ -118,5 +118,3 @@ int main(){
     return 0;
 }
 ```
-
-gada nama2an UDIN UJANG!!!
