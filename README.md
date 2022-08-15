@@ -18,7 +18,8 @@ Penjelasannnya
 3. Setelah itu juga ada <code>int main()</code> ini merupakan sebuah function, dan kode yang ada didalam {} baka dieksekusi
 4. Selanjutnya ada <code>cout</code> cara bacanya "see out" kalo singkatannya console out. Ini merupakan sebuah objek yang juga digunakan bebarengan dengan<code> << </code>
 
-Note: 
+***Note:***
+
 C++ juga bisa ditulis kayak gini
 
 ```c++
