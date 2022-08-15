@@ -97,3 +97,25 @@ halo cantik new line lagi make endl
 ```
 
 Buat bikin new line kita bisa make ```\n``` didalam string, atau bisa ```<< endl``` diakhir
+
+```\n``` dan ```endl``` digunakan untuk memutus garis. Namun, ```\n``` paling banyak digunakan.
+
+Tapi apa itu ```\n``` sebenarnya?
+Karakter baris baru ```\n``` disebut **escape sequence**, dan memaksa kursor untuk mengubah posisinya ke awal baris berikutnya di layar. Ini menghasilkan baris baru.
+
+Contoh escape sequences lainnya adalah:
+
+```c++
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    cout<< "nambah \t tab";
+    cout<< "tambah garis miring\\";
+    cout<< "tambah double quotes\";
+
+    return 0;
+}
+```
+
