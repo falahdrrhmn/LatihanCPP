@@ -74,3 +74,26 @@ int main() {
   return 0;
 }
 ```
+
+## New Line
+
+```c++
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    cout<< "halo cantik \n";
+    cout<< "halo cantik" << endl;
+    cout<< "halo cantik new line lagi make endl";
+
+    return 0;
+}
+
+output: 
+halo cantik 
+halo cantik 
+halo cantik new line lagi make endl
+```
+
+Buat bikin new line kita bisa make ```\n``` didalam string, atau bisa ```<< endl``` diakhir
