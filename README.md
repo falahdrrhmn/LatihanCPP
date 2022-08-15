@@ -26,3 +26,17 @@ C++ juga bisa ditulis kayak gini
 int main () { cout << "Hello World! "; return 0; }
 ```
 
+tapi kurang rekomendasi karna bakal sulit dibaca.
+
+Beberapa program C++ yang berjalan tanpa pustaka namespace standar. Baris using namespace std dapat dihilangkan dan diganti dengan kata kunci std, diikuti oleh operator :: untuk beberapa objek:
+
+kayak gini contohnya 
+
+'''C++
+#include <iostream>
+
+int main() {
+  std::cout << "Hello World!";
+  return 0;
+}
+```
