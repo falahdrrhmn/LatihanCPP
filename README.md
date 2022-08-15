@@ -41,3 +41,36 @@ int main() {
 }
 ```
 
+## Comments 
+bagian kode yang gatereksekusi, ada 2, single line comments, sama multi line comments. gini contohnya 
+
+Single-line Comments
+
+```C++
+#include <iostream>
+
+// ini comment + bagian sini gatereksekusi
+int main() {
+  std::cout << "Hello World!";
+  return 0;
+}
+```
+
+Multi-line Comments
+
+```C++
+#include <iostream>
+
+/* 
+ini comment 
++
+bagian
+sini 
+gatereksekusi
+*/
+
+int main() {
+  std::cout << "Hello World!";
+  return 0;
+}
+```
