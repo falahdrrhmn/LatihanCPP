@@ -120,4 +120,3 @@ int main(){
 ```
 
 gada nama2an UDIN UJANG!!!
-
