@@ -12,7 +12,7 @@ int main(){
 
     cout << "kalo int hasilnya : " << usia << "\n";
     cout << "kalo string hasilnya : " << nama << "\n";
-    cout << "kalo double hasilnya : " << koma << "\n";
+    cout << "kalo double hasilnya : " << koma << "\n"; 
     cout << "kalo char hasilnya : " << karakter << "\n";
     cout << "kalo bool hasilnya : " << pilihan << "\n";
 }
