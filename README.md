@@ -41,6 +41,8 @@ int main() {
 }
 ```
 
+<br><br><br>
+
 ## Comments 
 bagian kode yang gatereksekusi, ada 2, single line comments, sama multi line comments. gini contohnya 
 
@@ -74,6 +76,8 @@ int main() {
   return 0;
 }
 ```
+
+<br><br><br>
 
 ## New Line
 
