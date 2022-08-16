@@ -118,3 +118,48 @@ int main(){
     return 0;
 }
 ```
+
+## Function
+
+Deklarasi: tipe pengembalian, nama fungsi, dan parameter (jika ada)
+Definisi: tubuh fungsi (kode yang akan dieksekusi)
+
+```c++
+void myFunction() { // declaration
+  // the body of the function (definition)
+}
+```
+
+kalo dipanggilnya sebelum function dibikin bakal error
+
+```c++
+int main() {
+  myFunction();
+  return 0;
+}
+
+void myFunction() {
+  cout << "I just got executed!";
+}
+
+// Error
+```
+
+Jadi cara mengatasinya dideklarasi dulu sebelumnya 
+
+```c++
+// Function declaration
+void myFunction();
+
+// The main method
+int main() {
+  myFunction();  // call the function
+  return 0;
+}
+
+// Function definition
+void myFunction() {
+  cout << "I just got executed!";
+}
+```
+
