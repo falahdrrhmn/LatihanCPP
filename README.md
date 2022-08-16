@@ -190,6 +190,46 @@ int main() {
 // Anja Refsnes
 ```
 
-Paramter & agrumen bisa lebih dari 1.
 Ketika sebuah parameter dilewatkan ke fungsi, itu disebut argumen. Jadi, dari contoh di atas: fname adalah parameter, sedangkan Liam, Jenny dan Anja adalah argumen.
+
+bisa juga ditambahin defaul parameter, kayak gini contohnya
+
+```c++
+void myFunction(string country = "Norway") {
+  cout << country << "\n";
+}
+
+int main() {
+  myFunction("Sweden");
+  myFunction("India");
+  myFunction();
+  myFunction("USA");
+  return 0;
+}
+
+// Sweden
+// India
+// Norway
+// USA
+```
+
+Paramter & agrumen bisa lebih dari 1.
+
+```c++
+void myFunction(string fname, int age) {
+  cout << fname << " Refsnes. " << age << " years old. \n";
+}
+
+int main() {
+  myFunction("Liam", 3);
+  myFunction("Jenny", 14);
+  myFunction("Anja", 30);
+  return 0;
+}
+
+// Liam Refsnes. 3 years old.
+// Jenny Refsnes. 14 years old.
+// Anja Refsnes. 30 years old.
+```
+
 
