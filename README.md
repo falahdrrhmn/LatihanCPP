@@ -169,3 +169,27 @@ void myFunction() {
 }
 ```
 
+<br>
+
+### Parameters and Arguments
+
+```c++
+void myFunction(string fname) {
+  cout << fname << " Refsnes\n";
+}
+
+int main() {
+  myFunction("Liam");
+  myFunction("Jenny");
+  myFunction("Anja");
+  return 0;
+}
+
+// Liam Refsnes
+// Jenny Refsnes
+// Anja Refsnes
+```
+
+Paramter & agrumen bisa lebih dari 1.
+Ketika sebuah parameter dilewatkan ke fungsi, itu disebut argumen. Jadi, dari contoh di atas: fname adalah parameter, sedangkan Liam, Jenny dan Anja adalah argumen.
+
