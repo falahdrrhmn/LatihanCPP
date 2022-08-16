@@ -383,7 +383,35 @@ int main() {
 }
 ```
 
+<br>
 
+### Recursian
+
+intinya bakal ngelakui pengulangan dengan nilai akhir yang ditentukan. cara kerjanya dibakal ngeeksekusi dirinya sendiri terus meneruss
+
+kayak gini contohnya 
+
+```c++
+#include <iostream>
+using namespace std;
+
+int sum(int k) {
+  if (k > 0) {
+    return k + sum(k - 1);
+  } else {
+    return 0;
+  }
+}
+
+int main() {
+  int result = sum(10);
+  cout << result;
+  return 0;
+}
+
+output
+55 (10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1)
+```
 
 
 
