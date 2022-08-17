@@ -452,7 +452,7 @@ int main() {
 
 objek bisa lebih dari satu
 
-Class Methods
+## Class Methods
 
 Method adalah function yang dimiliki oleh kelas.
 
@@ -498,6 +498,7 @@ int main() {
 }
 
 ```
+
 
 
 
