@@ -448,5 +448,37 @@ int main() {
 }
 ```
 
+objek bisa lebih dari satu
+
+Class Methods
+
+Method adalah function yang dimiliki oleh kelas.
+
+Ada dua cara untuk mendefinisikan fungsi yang termasuk dalam kelas:
+
+1. Definisi di dalam kelas
+2. Definisi luar kelas
+
+Definisi didalam kelas 
+
+```c++
+class MyClass {        // The class
+  public:              // Access specifier
+    void myMethod() {  // Method/function defined inside the class
+      cout << "Hello World!";
+    }
+};
+
+int main() {
+  MyClass myObj;     // Create an object of MyClass
+  myObj.myMethod();  // Call the method
+  return 0;
+}
+```
+
+
+
+
+
 
 
