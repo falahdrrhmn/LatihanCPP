@@ -423,6 +423,18 @@ Cara bikin array
 string cars[4];
 ```
 
+Cara ngisi array
+
+```c++
+string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+```
+
+Bisa dengan tipe data lain
+
+```c++
+int myNum[3] = {10, 20, 30};
+```
+
 
 
 
