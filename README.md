@@ -417,7 +417,7 @@ output
 
 # Array
 
-Cara bikin array
+## Cara bikin array
 
 ```c++
 string cars[4];
@@ -435,7 +435,64 @@ Bisa dengan tipe data lain
 int myNum[3] = {10, 20, 30};
 ```
 
+## Akses elemen array
 
+```c++
+string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+cout << cars[0];
+// Outputs Volvo
+```
+
+## Mengubar elemen pada array
+
+```c++
+string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+cars[0] = "Opel";
+cout << cars[0];
+// Now outputs Opel instead of Volvo
+```
+
+## Loop di array
+
+```c++
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+  for (int i = 0; i < 4; i++) {
+    cout << cars[i] << "\n";
+  }
+  return 0;
+}
+
+output:
+Volvo
+BMW
+Ford
+Mazda
+```
+
+## Bikin array tanpa ukuran array
+
+Kalo misalnya dikasi angka bakal ada batasnya kayak gini
+
+```C++
+string cars[] = {"Volvo", "BMW", "Ford"}; // size of array is always 3
+```
+
+atau
+
+```c++
+string cars[5] = {"Volvo", "BMW", "Ford"}; // size of array is 5, even though it's only three elements inside it
+```
+
+Kalo tanpa angka, jadi gini
+
+```c++
+string cars[] = {"Volvo", "BMW", "Ford"}; // size of array is always 3
+```
 
 
 
