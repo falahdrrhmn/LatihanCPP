@@ -415,6 +415,21 @@ output
 
 <br><br><br>
 
+# Array
+
+Cara bikin array
+
+```c++
+string cars[4];
+```
+
+
+
+
+
+
+<br><br><br>
+
 # C++ OOP
 
 Class & Object
@@ -573,6 +588,8 @@ output:
 BMW X5 1999
 Ford Mustang 1969
 ```
+
+
 
 
 
