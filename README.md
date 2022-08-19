@@ -562,6 +562,12 @@ G
 H
 ```
 
+<br><br><br>
+
+# Structures (struct)
+
+mirip array tapi bedanya bisa beberapa tipe variable jadi satu
+
 
 <br><br><br>
 
