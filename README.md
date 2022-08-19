@@ -568,6 +568,31 @@ H
 
 mirip array tapi bedanya bisa beberapa tipe variable jadi satu
 
+## Cara buat struct
+
+```c++
+struct {             // Structure declaration
+  int myNum;         // Member (int variable)
+  string myString;   // Member (string variable)
+} myStructure;       // Structure variable
+```
+
+## One Structure in Multiple Variables
+
+```c++
+struct {
+  int myNum;
+  string myString;
+} myStruct1, myStruct2, myStruct3; // Multiple structure variables separated with commas
+```
+
+## Named Structures
+
+```c++
+
+```
+
+
 
 <br><br><br>
 
