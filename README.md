@@ -535,6 +535,10 @@ Outputs
 C
 ```
 
+## Loop pada array multimensional
+
+
+
 
 <br><br><br>
 
