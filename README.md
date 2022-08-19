@@ -494,7 +494,29 @@ Kalo tanpa angka, jadi gini
 string cars[] = {"Volvo", "BMW", "Ford"}; // size of array is always 3
 ```
 
+## Mendapatkan size array
 
+```c++
+int myNumbers[5] = {10, 20, 30, 40, 50};
+cout << sizeof(myNumbers);
+
+output:
+20
+```
+
+kenapa 20? bukan 5? karena sizeof mengembalikan nilai size dari tipe data dalam bytes. Dalam integer bernilai 4 bytes. dan dalam array terdadpat jumlah 5 elemen. sehingga 4 kalo 5 = 20. 
+
+Untuk mengetahui berapa banyak elemen yang dimiliki array, Anda harus membagi ukuran array dengan ukuran tipe data yang dikandungnya:
+
+seperti ini:
+```c++
+int myNumbers[5] = {10, 20, 30, 40, 50};
+int getArrayLength = sizeof(myNumbers) / sizeof(int);
+cout << getArrayLength;
+
+output:
+5
+```
 
 
 <br><br><br>
