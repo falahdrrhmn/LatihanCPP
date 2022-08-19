@@ -19,3 +19,6 @@ int main()
     myObj.myMethod(); // Call the method
     return 0;
 }
+
+// output
+// Hello World!
