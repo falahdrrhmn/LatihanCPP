@@ -864,3 +864,43 @@ Metode getSalary() publik mengembalikan nilai atribut gaji pribadi.
 Di dalam main(), kita membuat objek dari kelas Employee. Sekarang kita dapat menggunakan metode setSalary() untuk mengatur nilai atribut private menjadi 50000. Kemudian kita memanggil metode getSalary() pada objek untuk mengembalikan nilainya.
 
 
+## Inheritance
+
+Dalam C++, dimungkinkan untuk mewarisi atribut dan metode dari satu kelas ke kelas lainnya. Kami mengelompokkan "konsep pewarisan" ke dalam dua kategori:
+
+- Derived Class (child) - kelas yang mewarisi dari kelas lain
+- Base Class (parent) - kelas yang diwarisi dari
+
+Pada contoh di bawah, kelas Mobil (anak) mewarisi atribut dan metode dari kelas Kendaraan (induk):
+
+```c++
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Base class
+class Vehicle {
+  public: 
+    string brand = "Ford";
+    void honk() {
+      cout << "Tuut, tuut! \n" ;
+    }
+};
+
+// Derived class
+class Car: public Vehicle {
+  public: 
+    string model = "Mustang";
+};
+
+int main() {
+  Car myCar;
+  myCar.honk();
+  cout << myCar.brand + " " + myCar.model;
+  return 0;
+}
+
+output:
+Tuut, tuut!
+Ford Mustang
+```
