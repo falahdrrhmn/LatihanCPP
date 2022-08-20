@@ -804,6 +804,17 @@ BMW X5 1999
 Ford Mustang 1969
 ```
 
+## Access Specifier
+
+Kata kunci publik adalah penentu akses. Penentu akses menentukan bagaimana anggota (atribut dan metode) kelas dapat diakses. Pada contoh di atas, anggota bersifat publik - yang berarti mereka dapat diakses dan dimodifikasi dari luar kode.
+
+Namun, bagaimana jika kita ingin anggota bersifat pribadi dan tersembunyi dari dunia luar?
+
+Dalam C++, ada tiga penentu akses:
+
+- publik - anggota dapat diakses dari luar kelas
+- private - anggota tidak dapat diakses (atau dilihat) dari luar kelas
+- protected - anggota tidak dapat diakses dari luar kelas, namun, mereka dapat diakses di kelas yang diwarisi. Anda akan mempelajari lebih lanjut tentang inheritance nanti.
 
 
 
