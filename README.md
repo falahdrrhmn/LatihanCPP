@@ -1059,3 +1059,59 @@ output:
 Salary: 50000
 Bonus: 15000
 ```
+
+## Polymorphism
+
+### Polymorphism
+
+Polimorfisme berarti "banyak bentuk", dan itu terjadi ketika kita memiliki banyak kelas yang terkait satu sama lain melalui pewarisan.
+
+Seperti yang kami tentukan di bab sebelumnya; Warisan memungkinkan kita mewarisi atribut dan metode dari kelas lain. Polimorfisme menggunakan metode tersebut untuk melakukan tugas yang berbeda. Ini memungkinkan kita untuk melakukan satu tindakan dengan cara yang berbeda.
+
+Misalnya, pikirkan kelas dasar yang disebut Animal yang memiliki metode yang disebut animalSound(). Kelas Hewan yang diturunkan dapat berupa Babi, Kucing, Anjing, Burung - Dan mereka juga memiliki implementasi sendiri dari suara binatang (babi oinks, dan kucing mengeong, dll.):
+
+```c++
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Base class
+class Animal {
+  public:
+    void animalSound() {
+      cout << "The animal makes a sound \n" ;
+    }
+};
+
+// Derived class
+class Pig : public Animal {
+  public:
+    void animalSound() {
+      cout << "The pig says: wee wee \n" ;
+    }
+};
+
+// Derived class
+class Dog : public Animal {
+  public:
+    void animalSound() {
+      cout << "The dog says: bow wow \n" ;
+    }
+};
+
+int main() {
+  Animal myAnimal;
+  Pig myPig;
+  Dog myDog;
+
+  myAnimal.animalSound();
+  myPig.animalSound();
+  myDog.animalSound();
+  return 0;
+}
+
+output:
+The animal makes a sound
+The pig says: wee wee
+The dog says: bow wow
+```
