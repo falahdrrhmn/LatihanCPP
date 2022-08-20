@@ -866,6 +866,8 @@ Di dalam main(), kita membuat objek dari kelas Employee. Sekarang kita dapat men
 
 ## Inheritance
 
+### Inheritance
+
 Dalam C++, dimungkinkan untuk mewarisi atribut dan metode dari satu kelas ke kelas lainnya. Kami mengelompokkan "konsep pewarisan" ke dalam dua kategori:
 
 - Derived Class (child) - kelas yang mewarisi dari kelas lain
@@ -904,3 +906,5 @@ output:
 Tuut, tuut!
 Ford Mustang
 ```
+
+### Multilevel Inheritance
