@@ -1017,3 +1017,45 @@ output:
 Some content in parent class.
 Some content in another class.
 ```
+
+### Inheritance Access
+
+Anda mempelajari dari bab Access Specifiers bahwa ada tiga specifier yang tersedia di C++. Selama ini kita hanya menggunakan public (anggota kelas dapat diakses dari luar kelas) dan private (anggota hanya dapat diakses di dalam kelas). Penentu ketiga, protected, mirip dengan private, tetapi juga dapat diakses di kelas yang diwarisi:
+
+Gini contohnya: 
+
+```c++
+#include <iostream>
+using namespace std;
+
+// Base class
+class Employee  {
+  protected:  // Protected access specifier
+    int salary;
+};
+
+// Derived class
+class Programmer: public Employee {
+  public:
+    int bonus;
+    void setSalary(int s) {
+      salary = s;
+    }
+    int getSalary() {
+      return salary;
+    }
+};
+
+int main() {
+  Programmer myObj;
+  myObj.setSalary(50000);
+  myObj.bonus = 15000;
+  cout << "Salary: " << myObj.getSalary() << "\n";
+  cout << "Bonus: " << myObj.bonus << "\n";
+  return 0;
+}
+
+output:
+Salary: 50000
+Bonus: 15000
+```
