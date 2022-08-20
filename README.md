@@ -1062,8 +1062,6 @@ Bonus: 15000
 
 ## Polymorphism
 
-### Polymorphism
-
 Polimorfisme berarti "banyak bentuk", dan itu terjadi ketika kita memiliki banyak kelas yang terkait satu sama lain melalui pewarisan.
 
 Seperti yang kami tentukan di bab sebelumnya; Warisan memungkinkan kita mewarisi atribut dan metode dari kelas lain. Polimorfisme menggunakan metode tersebut untuk melakukan tugas yang berbeda. Ini memungkinkan kita untuk melakukan satu tindakan dengan cara yang berbeda.
@@ -1114,4 +1112,119 @@ output:
 The animal makes a sound
 The pig says: wee wee
 The dog says: bow wow
+```
+
+## Exceptions
+
+Saat mengeksekusi kode C++, kesalahan yang berbeda dapat terjadi: kesalahan pengkodean yang dibuat oleh programmer, kesalahan karena input yang salah, atau hal-hal lain yang tidak terduga.
+
+Ketika terjadi kesalahan, C++ biasanya akan berhenti dan menghasilkan pesan kesalahan. Istilah teknis untuk ini adalah: C++ akan melempar pengecualian (melempar kesalahan).
+
+### C++ try and catch
+
+Penanganan eksepsi dalam C++ terdiri dari tiga kata kunci: try, throw dan catch:
+
+Pernyataan try memungkinkan Anda untuk menentukan blok kode yang akan diuji untuk kesalahan saat sedang dieksekusi.
+
+Kata kunci throw melempar pengecualian saat masalah terdeteksi, yang memungkinkan kita membuat kesalahan khusus.
+
+Pernyataan catch memungkinkan Anda untuk menentukan blok kode yang akan dieksekusi, jika terjadi kesalahan pada blok try.
+
+Kata kunci coba dan tangkap berpasangan:
+
+```c++
+try {
+  // Block of code to try
+  throw exception; // Throw an exception when a problem arise
+}
+catch () {
+  // Block of code to handle errors
+}
+```
+
+contoh kerja 
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+  try {
+    int age = 15;
+    if (age >= 18) {
+      cout << "Access granted - you are old enough.";
+    } else {
+      throw (age);
+    }
+  }
+  catch (int myNum) {
+    cout << "Access denied - You must be at least 18 years old.\n";
+    cout << "Age is: " << myNum;  
+  }
+  return 0;
+}
+
+output:
+Access denied - You must be at least 18 years old.
+Age is: 15
+```
+
+Contoh dijelaskan
+Kami menggunakan blok coba untuk menguji beberapa kode: Jika variabel usia kurang dari 18, kami akan melempar pengecualian, dan menanganinya di blok tangkapan kami.
+
+Di blok tangkap, kami menangkap kesalahan dan melakukan sesuatu untuk itu. Pernyataan catch mengambil parameter: dalam contoh kami, kami menggunakan variabel int (myNum) (karena kami melemparkan pengecualian tipe int di blok try (usia)), untuk menampilkan nilai usia.
+
+Jika tidak ada kesalahan yang terjadi (misalnya jika usia 20 bukannya 15, artinya akan lebih besar dari 18), blok tangkap dilewati:
+
+jadi kalo misalnya kayak gini 
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+  try {
+    int age = 20;
+    if (age >= 18) {
+      cout << "Access granted - you are old enough.";
+    } else {
+      throw (age);
+    }
+  }
+  catch (int myNum) {
+    cout << "Access denied - You must be at least 18 years old.\n";
+    cout << "Age is: " << myNum;  
+  }
+  return 0;
+}
+
+output:
+Access granted - you are old enough.
+```
+
+Anda juga dapat menggunakan kata kunci throw untuk menampilkan nomor referensi, seperti nomor/kode kesalahan khusus untuk tujuan pengorganisasian:
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+  try {
+    int age = 15;
+    if (age >= 18) {
+      cout << "Access granted - you are old enough.";
+    } else {
+      throw 505;
+    }
+  }
+  catch (int myNum) {
+    cout << "Access denied - You must be at least 18 years old.\n";
+    cout << "Error number: " << myNum;  
+  }
+  return 0;
+}
+
+output:
+Access denied - You must be at least 18 years old.
+Error number: 505
 ```
