@@ -816,9 +816,43 @@ Dalam C++, ada tiga penentu akses:
 - private - anggota tidak dapat diakses (atau dilihat) dari luar kelas
 - protected - anggota tidak dapat diakses dari luar kelas, namun, mereka dapat diakses di kelas yang diwarisi. Anda akan mempelajari lebih lanjut tentang inheritance nanti.
 
+## Enkapsulasi (encpasulation)
 
+Arti Enkapsulasi, adalah untuk memastikan bahwa data "sensitif" disembunyikan dari pengguna. Untuk mencapai ini, Anda harus mendeklarasikan variabel/atribut kelas sebagai pribadi (tidak dapat diakses dari luar kelas). Jika Anda ingin orang lain membaca atau mengubah nilai anggota pribadi, Anda dapat menyediakan metode get dan set publik.
 
+Singkatnya biar bisa ngakses attribut dengan access specifier private
 
+Untuk mengakses atribut pribadi, gunakan metode "get" dan "set" publik:
+
+Gini contohnya
+
+```c++
+#include <iostream>
+using namespace std;
+
+class Employee {
+  private:
+    int salary;
+
+  public:
+    void setSalary(int s) {
+      salary = s;
+    }
+    int getSalary() {
+      return salary;
+    }
+};
+
+int main() {
+  Employee myObj;
+  myObj.setSalary(50000);
+  cout << myObj.getSalary();
+  return 0;
+}
+
+output:
+50000
+```
 
 
 
