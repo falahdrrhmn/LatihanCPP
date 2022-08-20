@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void myFunction()
-{ // declaration
-  // the body of the function (definition)
+void myFunction(){ // declaration
+    // the body of the function (definition)
     cout << "halo" ;
 }
 
