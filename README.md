@@ -854,6 +854,13 @@ output:
 50000
 ```
 
+Contoh dijelaskan
+Atribut salary adalah private, yang memiliki akses terbatas.
 
+Metode setSalary() publik mengambil parameter (s) dan menetapkannya ke atribut salary (salary = s).
+
+Metode getSalary() publik mengembalikan nilai atribut gaji pribadi.
+
+Di dalam main(), kita membuat objek dari kelas Employee. Sekarang kita dapat menggunakan metode setSalary() untuk mengatur nilai atribut private menjadi 50000. Kemudian kita memanggil metode getSalary() pada objek untuk mengembalikan nilainya.
 
 
